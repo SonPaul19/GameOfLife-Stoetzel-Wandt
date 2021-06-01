@@ -30,7 +30,7 @@
         </Grid.RowDefinitions>
         <Label Grid.Row="0" Grid.Column="1" Content="Zell Größe"/>
         <Slider Grid.Row="0" Grid.Column="2" Maximum="20" Minimum="5" TickFrequency="5" TickPlacement="BottomRight" IsSnapToTickEnabled="True" IsEnabled="{Binding IstEditierbar}" Value="{Binding PixelAnzahl}"/>
-        <Label Grid.Row="1" Grid.Column="1" Content="Verögerung"/>
+        <Label Grid.Row="1" Grid.Column="1" Content="Verzögerung" FontSize="10"/>
         <Slider Grid.Row="1" Grid.Column="2" Maximum="1000" Minimum="250" TickFrequency="50" TickPlacement="BottomRight" IsSnapToTickEnabled="True" Value="{Binding Verzoegerung}"/>
         <Label Grid.Row="2" Grid.Column="1" Content="Höhe"/>
         <Slider Grid.Row="2" Grid.Column="2" Minimum="5" Maximum="45" TickFrequency="5" TickPlacement="BottomRight" IsSnapToTickEnabled="True" IsEnabled="{Binding IstEditierbar}" Value="{Binding Hoehe}"/>
