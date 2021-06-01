@@ -93,7 +93,7 @@ namespace GameOfLife.Models
             this.Nachbarn = GetNachbarKoordinaten();
             this.PixelAnzahl = pixelAnzahl;
             Koordinaten = new Point(PixelAnzahl * ArrKoordinaten.X, PixelAnzahl * ArrKoordinaten.Y);
-            Farbe = Lebt ? Brushes.Green : Brushes.White;
+            Farbe = Lebt ? Brushes.Black : Brushes.White;
             KlickButton = new( a => AenderStatus(), a => true );
         }
         /// <summary>
@@ -105,13 +105,13 @@ namespace GameOfLife.Models
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName)); 
         }
         /// <summary>
-        /// Setzt die Farbe der Zelle (Lebendig = Blau,Tot = weiß)
+        /// Setzt die Farbe der Zelle (Lebendig = Schwarz,Tot = weiß)
         /// </summary>
         public void SetFarbe()
         {
             if (Lebt)
             {
-                Farbe = Brushes.Blue;
+                Farbe = Brushes.Black;
             }
             else 
             {
